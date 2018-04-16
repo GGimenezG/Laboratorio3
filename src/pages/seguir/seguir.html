@@ -1,0 +1,66 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Contactos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div padding>
+      <ion-segment  [(ngModel)]="contactos">
+        <ion-segment-button outline value="seguidores">
+          Seguidores
+        </ion-segment-button>
+        <ion-segment-button outline value="seguidos">
+          Seguidos
+      </ion-segment-button>
+      </ion-segment>
+    </div>
+
+    <ion-searchbar no-lines class="transparente"></ion-searchbar>
+      
+    <div [ngSwitch]="contactos">
+      <ion-list no-lines *ngSwitchCase="'seguidores'">
+
+        <button ion-item>
+            <ion-avatar item-start>
+                <img class="avatar" src="../assets/imgs/logo.png">
+            </ion-avatar>
+            <h2>Francisco</h2>
+            <p>CCNA</p>
+          </button>
+
+        <button ion-item>
+          <ion-avatar item-start>
+              <img class="avatar" src="../assets/imgs/logo.png">
+          </ion-avatar>
+          <h2>Bellalys</h2>
+          <p>C'est la vie</p>
+        </button>
+
+      </ion-list>   
+      <ion-list no-lines *ngSwitchCase="'seguidos'">
+
+        <button ion-item>
+          <ion-avatar item-start>
+              <img class="avatar" src="../assets/imgs/logo.png">
+          </ion-avatar>
+          <h2>Guillermo</h2>
+          <p>Buenas taldes a to's</p>
+        </button>
+
+        <button ion-item>
+            <ion-avatar item-start>
+                <img class="avatar" src="../assets/imgs/logo.png">
+            </ion-avatar>
+            <h2>Williams</h2>
+            <p>Hey there.</p>
+        </button>
+
+      </ion-list>
+    </div>
+</ion-content>

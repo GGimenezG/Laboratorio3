@@ -1,0 +1,31 @@
+
+<ion-menu [content]="nav" padding>
+<ion-content class="item-content">
+    <ion-list no-lines class="transparent">
+        <div class="col">
+            <button ion-item (click)="goToPerfil()" class="transparent">
+                <ion-avatar padding item-center>
+                    <img class="avatarperfil" src="../assets/imgs/avatar1.png">
+                    <h2 text-center>Bellalys Solares</h2>
+                    <h6 text-center>@Bearsoco</h6>
+                </ion-avatar> 
+            </button>
+        </div>
+        <button class="transparent" ion-item *ngFor="let page of pages" (click)="goToPage(page.component)">
+            <ion-icon item-left name="{{ page.icon }}"></ion-icon>
+            {{ page.titulo }}
+        </button>
+    </ion-list>
+</ion-content>
+</ion-menu>
+
+<ion-nav #NAV [root]="rootPage"></ion-nav>
+
+
+
+
+
+
+
+
+

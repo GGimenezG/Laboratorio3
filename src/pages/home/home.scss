@@ -1,0 +1,75 @@
+page-home {
+
+    .social-cards ion-col {
+        padding: 0;
+    }
+
+    .bg{
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(160deg, #FF5F5F 5%, #FFDE7D);
+    }
+    //text-center class="bg scroll-content"
+
+    img{
+        background-size: contain;
+        text-align: center;
+   }
+
+   ion-card-content, ion-row{
+       background:white;
+   }
+    
+
+    .itemli {
+        margin-bottom: -5px;
+        background: rgba(0, 0, 0, 0);
+        border-bottom: .05px solid rgb(255, 255, 255) ;
+        margin-left: 20px;    
+        color: white !important;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .padding{
+        padding-top: 50px;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .logo{
+        width: 50%;
+        height: 50%;  
+        padding-left: 20px;  
+    }
+
+    //Usado para que la letra del placeholder sea blanca. Termine
+    
+    .img{
+        padding-left: 20%;
+        width: 80%;
+        padding-bottom: 60px;
+        height: 80%;
+    }
+
+    //Letra del logo en cabecera
+
+    .price{
+        font-size: 50%!important;
+    }
+
+    .head h1{
+        font-size: 10vh!important;
+        font-weight: lighter!important;
+    }
+
+    .button{
+        background: principal;
+        width:130px;
+        height: 40px;
+    }
+
+    .ion-datetime{
+        background: rgba(0, 0, 0, 0);
+    }
+    
+}

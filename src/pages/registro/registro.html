@@ -1,0 +1,64 @@
+<ion-content class="bg">
+  <ion-card class="card">
+      <ion-list>
+
+          <ion-item class="head" no-lines text-center>
+              <h1 style="color:white">Kaalü</h1>
+          </ion-item>
+
+          <ion-item class="itemli">
+              <ion-select [(ngModel)]="type">
+                  <ion-option value="R">R</ion-option>
+                  <ion-option value="V">V</ion-option>
+              </ion-select>
+
+          </ion-item>
+
+          <ion-item class="itemli">
+              <ion-label style="color:white" floating>Nombres</ion-label>
+              <ion-input text="usuario" type="text" ></ion-input>
+          </ion-item>
+
+          <ion-item class="itemli">
+              <ion-label style="color:white" floating>Apellidos</ion-label>
+              <ion-input text="usuario" type="text" ></ion-input>
+          </ion-item>
+
+          <ion-item class="itemli">
+              <ion-label style="color:white" floating>Usuario</ion-label>
+              <ion-input text="usuario" type="text" ></ion-input>
+          </ion-item>
+
+          <ion-item class="itemli">
+              <ion-label style="color:white" floating>Email</ion-label>
+              <ion-input text="email" type="text" ></ion-input>
+          </ion-item>
+
+          <ion-item class="itemli">
+              <ion-label style="color:white" floating>Password</ion-label>
+              <ion-input text="password" type="password" ></ion-input>
+          </ion-item>
+
+          <ion-item class="itemli">
+              <ion-label style="color:white" floating>Repetir Password</ion-label>
+              <ion-input text="password" type="password" ></ion-input>
+          </ion-item>
+
+          <p center class="padding">
+              <button ion-button icon-start  >
+                  Cancelar
+              </button>
+
+              <button ion-button icon-start>
+                  Registrar
+              </button>
+          </p>
+
+          <p center>
+              ¿Ya tienes usuario? Ingresa aquí
+          </p>
+      </ion-list>
+
+  </ion-card>
+</ion-content>
+
