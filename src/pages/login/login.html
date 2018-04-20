@@ -1,0 +1,33 @@
+<ion-content text-center class="bg scroll-content">
+ 
+
+    <ion-card class="card">
+        <ion-card-content >
+            <ion-list>
+        
+            <ion-item class="head" no-lines text-center>
+                <h1 style="color:white">Kaalü</h1>
+            </ion-item>
+
+            <ion-item  class="userpass">
+                <ion-label floating style="color:white"> Usuario</ion-label> 
+                <ion-input type="text" ></ion-input>
+            </ion-item>
+        
+            <ion-item class="userpass">
+                <ion-label floating style="color:white"> Contraseña</ion-label>
+                <ion-input type="password"></ion-input>
+            </ion-item>
+                
+            <button ion-button block (click)="IrPrincipal()">
+                LOGIN
+            </button>
+
+            <ion-item class="transparente" no-lines>
+                <h6 text-center><a (click)="IrRegistro()" style="color:white">¿No tienes una cuenta? <b>Crea una</b></a></h6>
+            </ion-item>  
+
+            </ion-list>
+        </ion-card-content>
+</ion-card>
+</ion-content>

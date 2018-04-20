@@ -17,7 +17,7 @@ import { PerfilPage } from '../perfil/perfil';
 export class PrincipalPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private menu: MenuController) {
-    this.menu.swipeEnable(true);
+    this.menu.enable(true);
   }
   
 
